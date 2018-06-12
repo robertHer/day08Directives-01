@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  IsHidden = false;
+  clicked:boolean;
+  logClick = [];
+
+
+  onSelect(){
+    this.IsHidden =!this.IsHidden;
+    // if(this.clicked){
+    //   this.clicked = false; 
+    // }else{
+    //   this.clicked = true;
+    // }
+    console.log(this.IsHidden);
+  }
+
+  
 }
